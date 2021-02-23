@@ -119,10 +119,15 @@ void algoritmoInterpolacion (int a[], int n)
     }
     if(a[primero]==num)
     {
-        cout<<"ELEMENTO ENCONTRADO, EN LA POSICIÓN: "<<a[primero];
-        interpolacion<<endl;
-        interpolacion<<"ELEMENTO ENCONTRADO, EN LA POSICIÓN: "<<a[primero]<<endl;
-
+      for (int i=0; i<7; i++)
+      {
+        if(a[i]==num)
+        {
+          cout<<"ELEMENTO ENCONTRADO, EN LA POSICIÓN: "<<i;
+          interpolacion<<endl;
+          interpolacion<<"ELEMENTO ENCONTRADO, EN LA POSICIÓN: "<<i<<endl;
+        }
+      }
     }
     else
     {
